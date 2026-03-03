@@ -108,7 +108,7 @@ body {
 /* section 1 */
 
 .trends {
-    width: 100%;
+    max-width: 100%;
     padding-top: 58px;
 }
 
@@ -120,18 +120,19 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-}
+  }
 
 .trend-article{
-    display: inline-block;
+    display: block;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    aspect-ratio: 5/3.5;
+   
     width: 100%;
+    box-sizing: border-box;
     position: relative;
     background-color: #555555;
-    padding: 20px;
+    padding: 135px 25px 15px 25px;
     z-index: 0;
     
 }
@@ -150,6 +151,7 @@ body {
 
 .trend-content {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
@@ -157,9 +159,8 @@ body {
 
 .content-wrapper {
     border: 2px solid #b59f5b;
-    box-sizing: border-box;
     padding: 30px;
-}
+  }
 
 .image-first {
     background-image: url(../img/trend1.jpg);
@@ -247,6 +248,7 @@ body {
 
 .news-title {
   font-size: 20px;
+  
   font-weight: bold;
   margin-top: 5px;
 }
@@ -264,7 +266,7 @@ body {
 .news-data {
   display: flex;
   margin-bottom: 48px;
-  margin-top: 27px;
+  margin-top: 20px;
 }
 
 .data {
@@ -292,7 +294,8 @@ body {
 /* sidebar */
 
 .sidebar{
-  max-width: 270px;
+  width: 270px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   
@@ -326,7 +329,7 @@ body {
 
 .bar-article {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .bar-news-img {
@@ -377,7 +380,9 @@ body {
 
 .form {
   display: flex;
-  margin-top: 38px;
+  width: 100%;
+  margin-top: 40px;
+  box-sizing: border-box;
  
 }
 
@@ -386,7 +391,8 @@ body {
 }
 
 .search-query {
-  max-width: 220px;
+  width: 220px;
+  flex-grow: 1;
   height: 45px;
   padding: 0 16px;
   font-size: 13px;
@@ -405,6 +411,7 @@ outline: 2px solid #ae9e5f;
   display: block;
   width: 45px;
   height: 45px;
+  flex-shrink: 0;
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -416,7 +423,7 @@ outline: 2px solid #ae9e5f;
 }
 
 .newsletter-title {
-  margin-top: 57px;
+  margin-top: 60px;
 }
 
 .newsletter-mail-text {
@@ -490,13 +497,21 @@ outline: 2px solid #ae9e5f;
 
 .topic-list {
   list-style: none;
-  
+}
+
+.newsletter-title-topic {
+  margin-top: 50px;
+ 
 }
 
 .topic-name {
   display: block;
-  padding: 10px 0 10px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #ededed;
+}
+
+.topic-name:nth-child(n+2) {
+  padding-top: 15px;
 }
 
 .topic-link {
