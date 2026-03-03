@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="style.css/styles.css">
 </head>
 <body>
+  <!-- popup -->
+<div class="popup">
+  <div class="popup-content">
+    <h3 class="post-title bar-title">ваш фидбек</h3>
+    <div class="popup-container">
+      <form>
+        <div class="popup-card">
+          <lable class="popup-text" for="freguency">Как часто вы заходите на сайт?</lable>
+          <select class="popup-card-list" name="freguency" id="freguency" reguired>
+            <option value="daily">Почти каждый день</option>
+            <option value="weekly">Несколько раз в неделю</option>
+            <option value="rarely">Редко</option>
+          </select>
+        </div>
+
+<!-- radio -->
+
+        <div class="email-group">
+          <p class="popup-text">Вы подписаны на e-mail рассылку?</p>
+          <div class="radio-container">
+            <label class="radio-option radio-yes">
+              <input type="radio" name="email" value="yes" class="custom-radio" reguired checked>
+              <span class="radio-image image-popup-first"></span>
+              <span class="radio-text">Да</span>
+            </label>
+            <div class="radio-container">
+            <label class="radio-option radio-no">
+              <input type="radio" name="email" value="no" class="custom-radio" reguired>
+              <span class="radio-image image-popup-second"></span>
+              <span class="radio-text">Нет</span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
     <header class="header">
   
    <!--  общий контент    -->
