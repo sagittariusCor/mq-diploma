@@ -8,9 +8,10 @@
 </head>
 <body>
   <!-- popup -->
-<div class="popup">
+<div class="popup visually-hidden">
   <div class="popup-content">
-    <h3 class="post-title bar-title">ваш фидбек</h3>
+    <img src="../sources/svg/form-x.svg" alt="" class="close-btn">
+    <h2 class="post-title popup-title">ваш фидбек</h2>
     <div class="popup-container">
       <form>
         <div class="popup-card">
@@ -39,6 +40,14 @@
               <span class="radio-text">Нет</span>
             </label>
           </div>
+        </div>
+        </div>
+        <div class="popup-form-group">
+          <label class="popup-text" for="content">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+          <textarea name="content" id="content" class="popup-textarea" placeholder="Может, больше рецептов?"></textarea>
+        </div>
+        <div class="popup-container-button">
+          <button type="submit" class="popup-button">Отправить</button>
         </div>
       </form>
     </div>
