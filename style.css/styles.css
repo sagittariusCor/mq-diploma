@@ -742,15 +742,15 @@ outline: 2px solid #ae9e5f;
 
 
 .footer-icon--dribbble {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+  background-image: url(../svg/001-dribbble.svg);
 }
 
 .footer-icon--pinterest {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+  background-image: url(../svg/001-pinterest.svg);
 }
 
 .footer-icon--tumblr {
-background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+background-image: url(../svg/003-tumblr.svg);
 }
 
 .copyright {
