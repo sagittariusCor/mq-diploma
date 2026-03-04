@@ -360,18 +360,23 @@ display: none;
 }
 
      /* блок маин */
-
-.shared-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-    max-width: 1200px;
+.main-conteiner {
+   max-width: 1200px;
+   margin: auto;
+   margin-top: 60px;
+    
     box-sizing: border-box;
-    margin: auto;
     padding-top: 60px;
     padding-left: 17px;
     padding-right: 15px;
 }
+
+.shared-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 
 .article {
   display: flex;
@@ -709,6 +714,86 @@ outline: 2px solid #ae9e5f;
   padding-left: 5px;
   font-weight: bold;
 }
+
+/* section 2 */
+
+.content-shop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-box {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.shop-img-border {
+  padding: 0 15px;
+}
+
+.shop-image {
+  width: 100%;
+}
+
+.shop-title-link {
+  font-size: 20px;
+}
+
+.shop-link-word {
+  text-decoration: none;
+  color: #b59f5b;
+}
+
+.shop-border {
+  border: 3px solid #b59f5b;
+  padding: 50px 20px;
+  margin-top: -40px;
+}
+
+.shop-price{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 23px;
+}
+
+.shop-prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-product__price {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.shop-product__price .price-old {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.shop-price-value {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.shop-button {
+  width: 100%;
+  max-width: 140px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #b59f5b;
+  border: none;
+  padding: 18px 0 18px 0;
+}
+
+
+
 
 /* подвал  */
 
