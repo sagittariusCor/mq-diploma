@@ -197,8 +197,9 @@ display: none;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  
 }
+
+/* header */
 
 .header {
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
@@ -211,8 +212,6 @@ display: none;
   padding-bottom: 125px;
   position: relative;
   z-index: 0;
-  
-  
 }
 
 .header::after {
@@ -225,7 +224,6 @@ display: none;
   background: #000;
   opacity: 0.6;
   z-index: -1;
-  
 }
 
 .content {
@@ -234,10 +232,9 @@ display: none;
   align-items: center;
   box-sizing: border-box;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 17px;
   padding-right: 15px;
-  
 }
 
 .header-logo {
@@ -250,14 +247,11 @@ display: none;
   gap: 35px;
   font-size: 13px;
   text-transform: uppercase;
-
 }
 
 .link {
   text-decoration: none;
   color: #ffffff;
-  
-  
 }
 
 .link:hover {
@@ -265,31 +259,45 @@ display: none;
 }
 
 .intro {
-  width: 690px;
-  margin: auto;
+  max-width: 690px;
+  margin: 0 auto;
   margin-top: 100px;
-  
 }
 
 .title {
   text-align: center;
   font-size: 45px;
-  line-height: 75px;
+  line-height: 1.7;
   text-transform: uppercase;
   color: #ffffff;
-  margin: auto;
-
+  margin: 0 auto;
 }
 
 /* section 1 */
 
 .trends {
-    max-width: 100%;
-    margin: 58px 0 10px 0;
+  max-width: 100%;
+  margin: 55px 0 10px 0;
 }
 
-.trends-section .section-title {
-    font-size: 20px;
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #161516;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  background: #ae9e5f;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  margin-bottom: 30px;
 }
 
 .section-block {
@@ -299,19 +307,23 @@ display: none;
   }
 
 .trend-article{
+    position: relative;
+    z-index: 0;
     display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-grow: 1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: #555555;
    
     width: 100%;
+    min-height: 320px;
     box-sizing: border-box;
-    position: relative;
-    background-color: #555555;
-    padding: 132px 25px 11px 25px;
-    z-index: 0;
     
-}
+    padding: 15px 25px;
+  }
 
 .trend-article::after {
     content: "";
@@ -336,7 +348,7 @@ display: none;
 
 .content-wrapper {
     border: 2px solid #b59f5b;
-    padding: 28px 30px;
+    padding: 25px;
   }
 
 .image-first {
@@ -376,7 +388,6 @@ display: none;
     
 }
 
-
 .article {
   display: flex;
   box-sizing: border-box;
@@ -391,8 +402,6 @@ display: none;
 
 .main-img {
   flex-shrink: 0;
-  width: 380px;
-  height: 294px;
   background-color: #555555;
   margin-top: 3px;
 }
@@ -479,12 +488,10 @@ display: none;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .sidebar-section {
   width: 100%;
-  
 }
   
 .post-title {
@@ -493,7 +500,6 @@ display: none;
   text-transform: uppercase;
   text-align: center;
   color: #161516;
-  
 }
 
 .post-title::after {
@@ -549,7 +555,6 @@ display: none;
 
 .bar-title-text {
   line-height: 18px;
-    
 }
 
 
@@ -564,7 +569,6 @@ display: none;
   width: 100%;
   margin-top: 40px;
   box-sizing: border-box;
- 
 }
 
 .form-search:hover {
@@ -580,12 +584,10 @@ display: none;
   background: #f5f7f6;
   color: #a1a2a2;
   border: none;
-  
 }
 
 .search-query:focus {
-outline: 2px solid #ae9e5f;
-  
+  outline: 2px solid #ae9e5f;
 }
 
 .form-button {
@@ -600,7 +602,6 @@ outline: 2px solid #ae9e5f;
   background-size: 17px;
   border: none;
   cursor: pointer;
-  
 }
 
 .newsletter-title {
@@ -615,7 +616,6 @@ outline: 2px solid #ae9e5f;
   font-size: 13px;
   color: #a1a2a2;
   border: none;
-  
 }
 
 .newsletter-mail-text:focus {
@@ -635,7 +635,6 @@ outline: 2px solid #ae9e5f;
   line-height: 48px;
   text-transform: uppercase;
   cursor: pointer;
-  
 }
 
 .newsletter-button:hover {
@@ -659,7 +658,6 @@ outline: 2px solid #ae9e5f;
   padding: 4px 14px;
   border: 3px solid #ededed;
   font-size: 12px;
-  
 }
 
 .teg-link:hover {
@@ -671,7 +669,6 @@ outline: 2px solid #ae9e5f;
   text-decoration: none;
   color: #161516;
   font-weight: bold;
-  
 }
 
 /* тема */
@@ -682,7 +679,6 @@ outline: 2px solid #ae9e5f;
 
 .newsletter-title-topic {
   margin-top: 50px;
- 
 }
 
 .topic-name {
@@ -725,6 +721,7 @@ outline: 2px solid #ae9e5f;
 }
 
 .shop-box {
+  width: calc((100% - 124px) / 3);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -864,4 +861,128 @@ background-image: url(../svg/003-tumblr.svg);
   font-size: 12px;
   text-decoration: none;
   color: #989898;
+}
+
+/* media 641-1200 header */
+
+@media (min-width: 641px) and (max-width: 1200px) {
+
+.header {
+  background-image: url("../img/banner-bg-tablet.jpg");
+  padding: 45px;
+  padding-bottom: 125px;
+}
+
+.content {
+  padding: 0 35px;
+}
+
+.header-logo {
+  width: 158px;
+}
+
+.navigation-list {
+  display: none;
+}
+
+.intro {
+  margin-top: 79px;
+}
+
+.title {
+  font-size: 38px;
+  line-height: 1.375;
+}
+
+/* section 1 */
+
+.trends {
+    margin: 43px 0 10px 0;
+  }
+
+.section-title {
+    font-size: 17px;
+  }
+
+.section-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+.trend-article{
+    min-height: 243px;
+    padding: 60px 25px 12px 25px;
+  }
+
+.content-wrapper {
+    padding: 23px 32px;
+  }
+
+  .trend-title {
+    font-size: 17px;
+  }
+
+  /* main */
+
+.article {
+    flex-direction: column;
+  }
+
+.main-conteiner {
+    padding: 35px 40px 60px 40px;
+  }
+
+.shared-container {
+    margin-bottom: 5px;
+    
+}
+
+.article:nth-child(n+2) {
+  margin: 57px 0;
+  
+}
+
+.article-content {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.link-article {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.news-title {
+  font-size: 17px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.news-link {
+  line-height: 1.5;
+}
+
+.news-data {
+  margin-bottom: 48px;
+  margin-top: 20px;
+}
+
+.data {
+  margin-right: 12px;
+  font-size: 12px;
+}
+
+.news-author {
+  font-size: 12px;
+}
+
+.news-text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.one-text {
+  margin-top: 8px;
+}
+
 }
