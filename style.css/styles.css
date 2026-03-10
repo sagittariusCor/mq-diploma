@@ -392,18 +392,15 @@ display: none;
   display: flex;
   box-sizing: border-box;
   max-width: 778px;
-  height: auto;
-}
-
-.article:nth-child(n+2) {
-  margin: 57px 0;
-  
+  margin-right: 40px;
+  margin-bottom: 57px;
 }
 
 .main-img {
   flex-shrink: 0;
   background-color: #555555;
   margin-top: 3px;
+  margin-bottom: 10px;
 }
 
 .main-img-link {
@@ -485,7 +482,6 @@ display: none;
 
 .sidebar{
   width: 270px;
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -900,6 +896,11 @@ background-image: url(../svg/003-tumblr.svg);
     margin: 43px 0 10px 0;
   }
 
+  .section-title::after {
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
+
 .section-title {
     font-size: 17px;
   }
@@ -909,7 +910,7 @@ background-image: url(../svg/003-tumblr.svg);
   }
 
 .trend-article{
-    min-height: 243px;
+    min-height: 246px;
     padding: 60px 25px 12px 25px;
   }
 
@@ -925,10 +926,18 @@ background-image: url(../svg/003-tumblr.svg);
 
 .article {
     flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #eeeeee;
+    margin-bottom: 20px;
+  }
+
+  .main-img {
+    margin-bottom: 20px;
   }
 
 .main-conteiner {
-    padding: 35px 40px 60px 40px;
+    padding: 35px 35px 60px;
+    
   }
 
 .shared-container {
@@ -936,14 +945,9 @@ background-image: url(../svg/003-tumblr.svg);
     
 }
 
-.article:nth-child(n+2) {
-  margin: 57px 0;
-  
-}
-
 .article-content {
   margin-left: 0;
-  margin-top: 20px;
+  margin-bottom: 16px;
 }
 
 .link-article {
