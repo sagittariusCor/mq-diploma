@@ -392,12 +392,12 @@ display: none;
   display: flex;
   box-sizing: border-box;
   max-width: 778px;
-  margin-right: 40px;
+  margin-right: 45px;
   margin-bottom: 57px;
 }
 
 .main-img {
-  flex-shrink: 0;
+  width: 100%;
   background-color: #555555;
   margin-top: 3px;
   margin-bottom: 10px;
@@ -712,15 +712,9 @@ display: none;
 .conteiner-cadr {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 62px;
-}
-
-.shop-box {
-  width: calc((100% - 124px) / 3);
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  gap: 62px;
+  border: 2px solid red;
 }
 
 .shop-post-title {
@@ -729,7 +723,8 @@ display: none;
 
 .content-shop {
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  width: calc((100% - 124px) / 3); 
 }
 
 .shop-img {
@@ -759,7 +754,6 @@ display: none;
   border: 3px solid #b59f5b;
   padding: 48px 20px 20px 20px;
   margin-top: -35px;
-  flex: 1;
 }
 
 .shop-price{
@@ -928,11 +922,11 @@ background-image: url(../svg/003-tumblr.svg);
     flex-direction: column;
     flex-wrap: wrap;
     border-bottom: 3px solid #eeeeee;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .main-img {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
 .main-conteiner {
@@ -952,32 +946,16 @@ background-image: url(../svg/003-tumblr.svg);
 
 .link-article {
   font-size: 14px;
-  font-weight: 700;
-  margin-right: 20px;
 }
 
 .news-title {
   font-size: 17px;
-  margin-top: 5px;
-  line-height: 1.5;
-}
-
-.news-link {
   line-height: 1.5;
 }
 
 .news-data {
-  margin-bottom: 48px;
-  margin-top: 20px;
-}
-
-.data {
-  margin-right: 12px;
-  font-size: 12px;
-}
-
-.news-author {
-  font-size: 12px;
+  margin-bottom: 28px;
+  margin-top: 25px;
 }
 
 .news-text {
@@ -985,8 +963,7 @@ background-image: url(../svg/003-tumblr.svg);
   line-height: 1.5;
 }
 
-.one-text {
-  margin-top: 8px;
-}
+/* section 2 */
+
 
 }
