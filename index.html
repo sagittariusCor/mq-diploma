@@ -44,7 +44,7 @@
         </div>
         <div class="popup-form-group">
           <label class="popup-text" for="content">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-          <textarea name="content" id="content" class="popup-textarea" placeholder="Может, больше рецептов?"></textarea>
+          <textarea name="content" id="content" class="popup-textarea" placeholder=Может, больше рецептов?></textarea>
         </div>
         <div class="popup-container-button">
           <button type="submit" class="popup-button">Отправить</button>
@@ -68,6 +68,9 @@
     </div>
      <!--   список навигации     -->
        <nav class="header-navigation">
+        <button class="menu-burger">
+          <span class="menu-burger-label"></span>
+        </button>
         <ul class="navigation-list">
           <li class="list-item"><a class="link" href="#">главная</a></li>
           <li class="list-item"><a class="link" href="#">посты</a></li>
@@ -433,9 +436,12 @@
     <h3 class="post-title shop-post-title">Наши изделия</h3>
    <div class="conteiner-cadr"> 
     <article class="content-shop">
-          <div class="shop-img">
-            <img src="img/shop-item-desk1.jpg" alt="подушка с принтом" class="shop-image">
-          </div>
+          <picture class="shop-img">
+            <source media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
+            <source media="(max-width: 1200px)" srcset="img/shop-item-tablet1.jpg">
+            <source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
+          <img src="img/shop-item-desk1.jpg" alt="подушка с принтом" class="shop-image">
+          </picture>
           <div class="shop-border">
         <div class="shop-text">
           <h3 class="shop-title">
@@ -460,9 +466,12 @@
   </article>
 
  <article class="content-shop">
-          <div class="shop-img">
+          <picture class="shop-img">
+            <source media="(max-width: 640px)" srcset="img/shop-item-mobile2.jpg">
+            <source media="(max-width: 1200px)" srcset="img/shop-item-tablet2.jpg">
+            <source media="(min-width: 1201px)" srcset="img/shop-item-desk2.jpg">
             <img src="img/shop-item-desk2.jpg" alt="кукла зайчик" class="shop-image">
-          </div>
+          </picture>
           <div class="shop-border">
         <div class="shop-text">
           <h3 class="shop-title">
@@ -487,9 +496,12 @@
   </article>
 
  <article class="content-shop">
-          <div class="shop-img">
+          <picture class="shop-img">
+            <source media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
+            <source media="(max-width: 1200px)" srcset="img/shop-item-tablet3.jpg">
+            <source media="(min-width: 1201px)" srcset="img/shop-item-desk3.jpg">
             <img src="img/shop-item-desk3.jpg" alt="шестиугольная рамка" class="shop-image">
-          </div>
+          </picture>
           <div class="shop-border">
         <div class="shop-text">
           <h3 class="shop-title">
