@@ -181,6 +181,8 @@ display: none;
   max-height: 130px;
   min-height: 130px;
 
+  font-family: OpenSans, sans-serif;
+
 }
 
 .popup-textarea:hover {
